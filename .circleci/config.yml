@@ -21,3 +21,4 @@ jobs:
 
       - run:
           name: Check README.md
+          command: aspell check ./README.md
