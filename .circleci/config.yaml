@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: debian:buster-slim
+
+    steps:
+      - checkout
+
+      - run:
+          name: Print the Current Time
+          command: Date
+
+      - run:
+          name: Show directory contents
+          command: ls -alh
+
+      - run:
+          name: Install aspell
+          command: apt-get update && apt-get intall -y aspell
+
+      - run:
+          name: Check README.md
