@@ -8,10 +8,6 @@ jobs:
       - checkout
 
       - run:
-          name: Print the Current Time
-          command: Date
-
-      - run:
           name: Show directory contents
           command: ls -alh
 
