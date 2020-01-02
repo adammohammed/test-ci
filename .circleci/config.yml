@@ -14,3 +14,13 @@ jobs:
       - run:
           name: Spell check Markdown Files
           command: mdspell --report "**/*.md"
+
+
+workflows:
+  version: 2
+  tagged-build:
+    jobs:
+      - build
+      filters:
+        tags:
+          only: /^v.*/
