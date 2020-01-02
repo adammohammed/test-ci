@@ -11,8 +11,13 @@ jobs:
           name: Show directory contents
           command: ls -alh
       - run:
+          name: Get curl
+          command: apt-get install curl
+
+      - run:
           name: Fetch nodejs setup
           command: curl -sL https://deb.nodesource.com/setup_13.x | bash -
+
       - run:
           name: Install nodejs
           command: apt-get install -y nodejs
