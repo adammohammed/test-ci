@@ -10,14 +10,16 @@ jobs:
       - run:
           name: Show directory contents
           command: ls -alh
-
+      - run:
+          name: Fetch nodejs setup
+          command: curl -sL https://deb.nodesource.com/setup_13.x | bash -
       - run:
           name: Install nodejs
-          command: apt-get update && apt-get install -y nodejs
+          command: apt-get install -y nodejs
 
       - run:
           name: install markdown-spellcheck
-          command: npm i markdown-spellcheck -get
+          command: npm i markdown-spellcheck -g
 
       - run:
           name: Spell check Markdown Files
