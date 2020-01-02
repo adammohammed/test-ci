@@ -1,3 +1,3 @@
-This is the first commit.
+[![CircleCI](https://circleci.com/gh/adammohammed/test-ci.svg?style=svg)](https://circleci.com/gh/adammohammed/test-ci)
 
-Spelling Error.
+Testing out Circle CI.
